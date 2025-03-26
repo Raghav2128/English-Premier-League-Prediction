@@ -6,7 +6,10 @@ Predict the outcome of football matches using machine learning — trained on re
 
 ## 🧠 Project Overview
 
-This project explores how machine learning can be applied to football analytics by predicting match outcomes: Home Win, Draw, or Away Win. Using a clean and structured dataset, we train a logistic regression model to learn from past match data and evaluate its performance using accuracy and a confusion matrix.
+This project explores how machine learning can be applied to football analytics by predicting match outcomes: Home Win, Draw, or Away Win. It includes two key parts:
+
+1. **Data Collection:** Scrape Premier League data (fixtures, results, shooting stats) from FBref using Python and BeautifulSoup.
+2. **Prediction:** Use the scraped and cleaned dataset to train a logistic regression model and evaluate its accuracy.
 
 The goal of this project was both educational and practical: to gain experience in data preprocessing, feature encoding, and model evaluation using real-world sports data.
 
@@ -14,11 +17,12 @@ The goal of this project was both educational and practical: to gain experience 
 
 ## 🚀 Features
 
+- Scrape match data from [fbref.com](https://fbref.com/)
 - Clean and analyze historical football match data
 - Encode categorical labels (Home, Away, Draw)
 - Train a Logistic Regression model to predict outcomes
-- Evaluate performance with accuracy score and confusion matrix
-- Simple, readable, and reproducible notebook
+- Evaluate model performance using accuracy and confusion matrix
+- Simple, modular, and reproducible notebooks
 
 ---
 
@@ -27,6 +31,8 @@ The goal of this project was both educational and practical: to gain experience 
 - **Python**
 - **Pandas** – for data manipulation and preprocessing
 - **scikit-learn** – for model building, encoding, and evaluation
+- **BeautifulSoup** – for scraping football data from FBref
+- **Requests** – to make HTTP calls to web pages
 - **Jupyter Notebook** – for interactive development and experimentation
 
 ---
@@ -45,7 +51,6 @@ pip install -r requirements.txt
 ```sh
 jupyter notebook predictions.ipynb
 ```
-
 ---
 
 ## ✅ Future Improvements
